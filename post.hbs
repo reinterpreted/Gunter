@@ -13,10 +13,7 @@
 	    <div id="menu">
 	        <ul>
 	            <li>
-	            	<a href=""><span><i class="fa fa-twitter"></i></span> Twitter</a> 
-	            </li>
-	            <li>
-	            	<a href=""><span><i class="fa fa-github"></i></span> Github</a>
+	            	<a href="http://github.com/reinterpreted"><span><i class="fa fa-github"></i></span> Github</a>
 	            </li>
 	            <li>
 	            	<a href="{{@blog.url}}/rss/"><span><i class="fa fa-rss"></i></span> RSS</a>
@@ -28,7 +25,7 @@
 
 <header class="main-header {{#if @blog.cover}}" style="background-image: url({{@blog.cover}}){{else}}no-cover{{/if}}">
 	<figure class="logo">
-		{{#if @blog.logo}}<a href="{{@blog.url}}"><img class="img-logo" src="{{@blog.logo}}" alt="Logo Blog"></a>{{/if}}
+		{{#if @blog.logo}}<a href="{{@blog.url}}"><img class="img-logo" src="{{@blog.logo}}" alt="Blog Logo"></a>{{/if}}
 	</figure>
 	<div class="title">
 		<a href="{{@blog.url}}">
@@ -44,7 +41,7 @@
 			<div class="inner">
 				<header class="header-post">
 					<span class="meta-post">
-						<time datetime="{{date format='YYYY-MM-DD'}}">{{date format="DD MMM YYYY"}}</time>
+						<time datetime="{{date format='YYYY-MM-DD'}}">{{date format="MMM DD, YYYY"}}</time>
 					</span>
 					<h2 class="title-post">{{{title}}}</h2>
 				</header>
@@ -64,7 +61,7 @@
 						{{/if}}
 
 						<div class="bio">
-							<span>Autor</span>
+							<span>Author</span>
 							<h4 class="author-name">
 								<a href="{{url}}">{{name}}</a>
 							</h4>
@@ -76,7 +73,7 @@
 					{{/author}}
 
 					<section class="share">
-						<h4>Comparte</h4>
+						<h4>Share</h4>
 						<a href="https://twitter.com/share?text={{title}}&url={{url absolute="true"}}" class="fa fa-twitter" onclick="window.open(this.href, 'twitter-share', 'width=550,height=235');return false;">
 							<span class="hidden">Twitter</span>
 						</a>
