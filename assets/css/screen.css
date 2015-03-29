@@ -483,7 +483,7 @@ img {
   background-size: cover; }
 
 .main-header .logo {
-  width: 200px;
+  /*width: 200px;*/
   height: 200px;
   display: block;
   margin: 0 auto;
@@ -497,7 +497,7 @@ img {
 .main-header .logo .img-logo {
   width: 100%;
   height: 100%;
-  border-radius: 50%; }
+  /*border-radius: 50%;*/ }
 
 .main-header .title {
   display: inline-block;
